@@ -1,19 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title> Bitcoin and Ethereum Prices </title>
-    </head>
-    <body>
-        {% extends "template.html" %}
-        {% block content %}
-
-        <h1> Live Prices for BTC and ETH </h1>
-        <ul>
-            <li>BTC</li>
-            <li>ETH</li>
-        </ul>
-
-        {% endblock %}
-    </body>
-</html>
+{% extends "template.html" %}
+{% block title %} Bitcoin and Ethereum Prices {% endblock %}
+{% block content %}
+<h4> Prices </h4>
+<ul>
+    <li>BTC</li>
+    <li>ETH</li>
+</ul>
+{% endblock %}
