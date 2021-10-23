@@ -1,4 +1,6 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
+import bitcoin
+
 
 app = Flask(__name__)
 
@@ -10,7 +12,8 @@ def home():
 
 @app.route("/prices")
 def prices():
-    return render_template("prices.html")
+    latest_price = bitcoin.get_price()
+    return render_template("prices.html", live_prices=latest_price)
 
 
 if __name__ == "__main__":

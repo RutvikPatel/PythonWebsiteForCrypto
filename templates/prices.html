@@ -3,7 +3,14 @@
 {% block content %}
 <h4> Prices </h4>
 <ul>
-    <li>BTC</li>
-    <li>ETH</li>
+    {% for coins in live_prices %}
+        <li> {{ coins[0] }} ${{ coins[1] | round(3) }} </li>
+    {% endfor %}
+    <p></p>
+    <p> The live prices for BTC and ETH (and others) updates every 60 seconds based on the API I am using. You can refresh the page after 60 seconds.</p>
+    <form action="/prices" method="get">
+        <p><input type="submit" value="Refresh  Page"></p>
+    </form>
 </ul>
+
 {% endblock %}
