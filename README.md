@@ -1,7 +1,7 @@
 # PythonWebsiteForCrypto
 
 ## How to Run
-* Just clone my repository and Run main.py file and the open the link that poped up to run on local host.
+** Just clone my repository and Run main.py file and the open the link that poped up to run on local host.
 
 
 ## Questions
