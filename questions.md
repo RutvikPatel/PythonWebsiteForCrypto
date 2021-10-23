@@ -1,4 +1,7 @@
 # PythonWebsiteForCrypto
+
+
+## Questions
 * Are there any sub-optimal choices( or short cuts taken due to limited time ) in your implementation?
 * Answer: Due to limited time I was not able to find an free API for retreving live Bid and Ask prices for crypto currencies. So, I did not do that part of this assignment.
 * Is any part of it over-designed? ( It is fine to over-design to showcase your skills as long as you are clear about it)
